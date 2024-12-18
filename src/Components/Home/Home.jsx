@@ -1,8 +1,8 @@
 import { Button } from "@mui/material";
 import { useDispatch, useSelector } from "react-redux";
 import { getAllProducts } from "../../Redux/actions";
-//import Card from '@mui/material/Card';
-import Card from '../Cards/Card'
+import Card from '@mui/material/Card';
+//import Card from '../Cards/Card'
 import CardContent from '@mui/material/CardContent';
 
 export default function Home() {
