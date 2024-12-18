@@ -1,10 +1,10 @@
 
 
-export default function FiltersAndOrders(){
+export default function FiltersAndOrder(){
 
     return(
         <div>
-            
+
         </div>
     )
 }
