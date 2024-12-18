@@ -7,6 +7,7 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
+import { useNavigate } from 'react-router-dom';
 
 
 // const useStyles = makeStyles({
@@ -15,9 +16,20 @@ import Typography from '@mui/material/Typography';
 //   },
 // });
 
-export default function BaseCard({ image, name, description, stock, category }) {
+export default function BaseCard({ image, name, description, category, _id}) {
+    
+    
+    // const navigate = useNavigate()
+    // const toDetail =  () =>{
+    //   navigate(`https://backend-vis3d.onrender.com/products/${_id}`)
+    // }
+     
+    // poner despues en el prop de card onClick={toDetail}
+    
+    
+    
     return (
-      <Card sx={{ maxWidth: 345, maxHeight: 500, margin: '1rem' }}>
+      <Card sx={{ maxWidth: 345, maxHeight: 500, margin: '1rem' }}  >
         {/* <CardActionArea> */}
           <CardMedia
             component="img"
@@ -36,9 +48,7 @@ export default function BaseCard({ image, name, description, stock, category }) 
             <Typography variant="body2" color="text.secondary">
               {category}
             </Typography>
-            <Typography variant="body2" color="text.secondary">
-              {stock}
-            </Typography>
+          
           </CardContent>
        
       </Card>
